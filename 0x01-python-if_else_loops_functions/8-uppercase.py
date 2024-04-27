@@ -8,5 +8,3 @@ def uppercase(str):
             lower_int = ord(letter)
             upper = lower_int - 32
             print("{}".format(chr(upper)), end="")
-
-uppercase("Holberton School, 98 battery street")
