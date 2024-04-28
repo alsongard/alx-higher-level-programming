@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+py_compile.compile("test.py", cfile="test.pyc")
