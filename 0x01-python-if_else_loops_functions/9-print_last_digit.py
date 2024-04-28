@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 def print_last_digit(number):
-    str_number = str(number)
-    last_digit = str_number[-1]
-    return last_digit
+    if number < 0:
+        last_digit = number % -(10)
+        print(-(last_digit), end="")
+    else:
+        last_digit = number % 10
+        print(last_digit, end="")
+    return abs(last_digit)
