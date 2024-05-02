@@ -4,3 +4,6 @@ def fib(n):
         print(a)
         a, b = b, b + a
     print()
+if __name__ == "__main__":
+    import sys
+    fib(int(sys.argv[1]))
