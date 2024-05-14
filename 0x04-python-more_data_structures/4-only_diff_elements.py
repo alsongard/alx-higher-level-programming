@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 def only_diff_elements(set_1, set_2):
-    my_list = []
-    for item_1 in set_1:
-        for item_2 in set_2:
-            if item_2 == item_1:
-                my_list.append(item_2)
-    return set(my_list)
+    """
+    symmetric_difference:
+    We use the built-in symmetric_difference method of sets.
+    This method returns a new set containing elements that are
+    in either set_1 or set_2, but not in both.
+    """
+    return set_1.symmetric_difference(set_2)
